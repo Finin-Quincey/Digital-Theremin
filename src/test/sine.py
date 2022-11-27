@@ -6,7 +6,7 @@ import utime
 import _thread
 import math
 
-from pio_dac import PIOPWM
+from main.pio_dac import PIOPWM
 
 pwm = PIOPWM(0, 14, max_count=250, count_freq=10_000_000)
 
