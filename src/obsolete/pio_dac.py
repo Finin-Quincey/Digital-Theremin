@@ -34,6 +34,7 @@ class PIOPWM:
 
     def set(self, value):
         # Minimum value is -1 (completely turn off), 0 actually still produces narrow pulse
-        value = max(value, -1)
-        value = min(value, self._max_count)
+        # These checks for OOB values make this WAAAY slower
+        #value = max(value, -1)
+        #value = min(value, self._max_count)
         self._sm.put(value)
