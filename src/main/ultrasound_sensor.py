@@ -8,7 +8,7 @@ from machine import Pin
 import utime
 
 SPEED_OF_SOUND = 0.343  # Speed of sound in air, in mm/us
-PULSE_LENGTH = 20       # Length of pulse sent from trig pin, in us
+PULSE_LENGTH = 10       # Length of pulse sent from trig pin, in us
 
 class USRangefinder:
 
@@ -33,6 +33,7 @@ class USRangefinder:
             on = utime.ticks_us()
 
         elapsed = on - off
+        if elapsed > 5000: return -1 # Out of range
         dist = (elapsed * SPEED_OF_SOUND) / 2 # Divide by 2 to account for outward and return trips
 
         return dist
