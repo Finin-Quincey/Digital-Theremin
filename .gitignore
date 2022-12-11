@@ -1,7 +1,7 @@
 # IDE
 .vscode/
 pico-go.json
-.ampy
+#.ampy
 
 # OS
 Thumbs.db

@@ -1,0 +1,3 @@
+# ampy settings file
+AMPY_PORT=COM7
+AMPY_BAUD=115200
