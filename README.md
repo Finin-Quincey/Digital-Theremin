@@ -34,7 +34,8 @@ Here's how to make one yourself:
 
 1. Solder up the circuit as shown in the [schematic](images/schematic.png)
 2. Plug the Pico into a PC. Download the [official MicroPython image](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#drag-and-drop-micropython) and copy it to the Pico to install.
-3. `pip install adafruit-ampy`
-4. Download this repo
-5. Navigate to src/main and run `ampy put main.py`. Repeat for all files in src/main.
-6. Unplug the Pico, plug in a USB power supply (any micro-USB should do just fine) and speakers/headphones (anything with a 3.5mm audio jack will work - turn the volume down the first time you plug it in, just in case), and start playing!
+3. `pip install adafruit-ampy` (you've already got Python installed, right?)
+4. Download/clone this repo
+5. Figure out what COM port your Pico has been assigned, then edit `.ampy` and change the COM_PORT option accordingly.
+6. Run `flash_project.bat`
+7. Unplug the Pico, plug in a USB power supply (any micro-USB should do just fine) and speakers/headphones (anything with a 3.5mm audio jack will work - turn the volume down the first time you plug it in, just in case), and start playing!
