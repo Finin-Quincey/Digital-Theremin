@@ -10,7 +10,6 @@ This project was originally made as a secret santa gift, with a £10 budget and 
 - Independent volume and pitch control via 2 ultrasounic rangefinder (sonar) sensors
 - Automatic quantisation to make playing songs ~actually possible~ easier
 - Built-in analog low-pass filter with control knob to adjust brightness of output sound
-- Master volume knob
 - Transpose and portamento time functions
 - Scale function that cycles through a range of scales including chromatic, major, minor, pentatonic and blues
 
