@@ -19,13 +19,15 @@ This project was originally made as a secret santa gift, with a £10 budget and 
 - Raspberry Pi Pico Rev3 (£3.60), running MicroPython 1.18
 - 2x HC-SR04 ultrasonic rangefinder modules (£2 each)
 - 3.5mm TRS audio jack connector (£0.80)
-- 2x 10k linear potentiometers (£0.80 each), one for controlling amplification and the other controlling the low-pass filter.
+- 2x 10k linear* potentiometers (£0.80 each), one for controlling amplification and the other controlling the low-pass filter.
 
 _... plus a few things I already had, or cost me next-to-nothing:_
 - 3D printed housing with laser-cut acrylic lid
 - 3D printed potentiometer knobs and button covers
 - IRLB8721PbF N-channel power MOSFET
 - Veroboard, solder and a few passive components
+
+_\* Volume is of course logarithmic, but it was easier to source a linear potentiometer and convert the output to log in software_
 
 ## 🎧 Setup
 
